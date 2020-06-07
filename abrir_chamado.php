@@ -1,8 +1,10 @@
 <?php
   session_start();
 
-  echo $_SESSION['autenticado'];
-
+  if(!isset($_SESSION['autenticacao']) || $_SESSION['autenticacao'] != 'SIM'){
+    header('Location: index.php?login=erro2');
+  }
+  
 ?>
 
 <html>
