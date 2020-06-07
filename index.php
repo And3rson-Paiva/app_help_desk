@@ -44,6 +44,11 @@
                     Usuário ou senha Inválido(s)
                   </div>
                 <?}?>
+                <? if(isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
+                  <div class='text-danger'>
+                    Faça o login antes de acessar as páginas
+                  </div>
+                <?}?>
                 <button class="btn btn-lg btn-dark btn-block" type="submit">Entrar</button>
               </form>
             </div>
