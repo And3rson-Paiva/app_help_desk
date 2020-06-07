@@ -22,7 +22,7 @@
     if($usuario_autenticado){
        echo 'Usuário autenticado'; 
     }else{
-        echo 'Erro na autenticação do usuário';
+        header('Location: index.php?login=erro');
     }
 
     
