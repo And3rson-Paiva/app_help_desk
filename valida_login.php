@@ -5,10 +5,11 @@
     //Variável que verifica se a autenticação foi realizada
     $usuario_autenticado = false;
     $usuario_id = null;
+    $usuario_perfil_id = null;
 
     $perfis = array(1 => 'Administrativo', 2 => 'Usuário');
 
-    $usuario_perfil_id = null;
+    
 
     //chamada ao name relacionado ao input html
     $_POST['email'];
@@ -16,10 +17,10 @@
 
     //Usuários do sistema, trocar pela requisição de usuários do banco de dados
     $usuarios_app = array(
-        array('id' => 1, 'email' => 'adm@teste.com.br', 'senha' => '1234', '$perfil_id' => 1),
-        array('id' => 2, 'email' => 'user@teste.com.br', 'senha' => '1234', '$perfil_id' => 1),
-        array('id' => 3, 'email' => 'jose@teste.com.br', 'senha' => '1234', '$perfil_id' => 2),
-        array('id' => 4, 'email' => 'maria@teste.com.br', 'senha' => '1234', '$perfil_id' => 2),
+        array('id' => 1, 'email' => 'adm@teste.com.br', 'senha' => '1234', 'perfil_id' => 1),
+        array('id' => 2, 'email' => 'user@teste.com.br', 'senha' => '1234', 'perfil_id' => 1),
+        array('id' => 3, 'email' => 'jose@teste.com.br', 'senha' => '1234', 'perfil_id' => 2),
+        array('id' => 4, 'email' => 'maria@teste.com.br', 'senha' => '1234', 'perfil_id' => 2),
     );
 
     //percorrendo usuarios

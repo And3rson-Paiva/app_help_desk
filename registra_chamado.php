@@ -1,6 +1,6 @@
 <?php
 
-    session_start()
+    session_start();
 
     //trabalhando na montagem do texto
     $titulo = str_replace('#', '-', $_POST['titulo']);
@@ -11,7 +11,7 @@
 
     //abrindo o arquivo
     $arquivo = fopen('arquivo.hd', 'a');
-
+ 
     //escrevendo o arquivo
     fwrite($arquivo, $texto);
 
