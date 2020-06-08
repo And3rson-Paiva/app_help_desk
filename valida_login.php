@@ -28,7 +28,7 @@
         header('Location: home.php');
     }else{
         $_SESSION['autenticado'] = 'NÃO';
-        header('Location: index.php?login=erro');
+        header('Location: index.php?login=erro'); 
     }
 
     
